@@ -1,255 +1,258 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Samuel Personal Website</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-<style>
-/* --- Global --- */
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: #0a0a0a;
-  color: #e0e0e0;
-  overflow-x: hidden;
-}
-
-/* --- Header --- */
-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  padding: 20px 20px;
-  text-align: center;
-  background: #070707;
-  border-bottom: 2px solid #00ffff;
-  box-shadow: 0 0 20px #00ffff40;
-}
-
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 2.8rem;
-  color: #00aaff;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-nav {
-  margin-top: 15px;
-}
-
-nav a {
-  margin: 0 15px;
-  color: #cce6ff;
-  font-weight: 500;
-  padding: 8px 12px;
-  border-radius: 6px;
-  transition: 0.3s;
-}
-
-nav a:hover {
-  background-color: #00ffff20;
-  color: #00ffff;
-}
-
-/* --- Sections --- */
-.section {
-  padding: 60px 20px;
-  max-width: 1100px;
-  margin: auto;
-  border-left: 4px solid #00aaff30;
-  border-radius: 8px;
-  margin-bottom: 40px;
-}
-
-h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
-  color: #cce6ff;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #00ffff;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #d0d0d0;
-}
-
-/* --- Cards & Projects --- */
-.card, .project-box {
-  background-color: #111111;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 8px 25px #00ffff20;
-  transition: transform 0.3s, box-shadow 0.3s;
-  margin-bottom: 30px;
-}
-
-.project-box {
-  cursor: pointer;
-  text-align: center;
-  border: 1px solid #00aaff30;
-}
-
-.project-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px #00ffff;
-  border-color: #00ffff;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-img {
-  max-width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-/* --- Buttons --- */
-.btn {
-  display: inline-block;
-  padding: 12px 22px;
-  border-radius: 8px;
-  background: #00aaff;
-  color: #fff;
-  border: none;
-  font-weight: 500;
-  transition: 0.3s;
-  margin-top: 10px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background: #00ffff;
-  color: #0a0a0a;
-  box-shadow: 0 0 15px #00ffff;
-}
-
-/* --- Diagram --- */
-.diagram {
-  background-color: #111111;
-  padding: 20px;
-  border-radius: 12px;
-  border: 1px solid #00ffff30;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-/* --- Footer --- */
-footer {
-  text-align: center;
-  padding: 20px;
-  color: #cce6ff;
-  opacity: 0.8;
-  border-top: 2px solid #00ffff30;
-}
-
-/* --- Responsive --- */
-@media (max-width: 600px) {
-  h1 { font-size: 2.2rem; }
-  nav a { display: block; margin: 10px 0; }
-}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Samuel Adeniyi — Student Portfolio</title>
+  <meta name="description" content="Samuel Adeniyi — Computer Science student portfolio. Projects, experience, achievements and contact." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <meta name="theme-color" content="#0b3b8a" />
 </head>
 <body>
-<header>
-<h1>Samuel Personal Website</h1>
-<nav>
-  <a href="#about">About</a>
-  <a href="#projects">Projects</a>
-  <a href="#resume">Resume</a>
-  <a href="#contact">Contact</a>
-</nav>
-</header>
-
-<section id="about" class="section">
-  <div class="card">
-    <h2>About Me</h2>
-    <p>I'm Samuel Irenitemi Adeniyi, a passionate student, leader, and innovator in STEM, robotics, music, and community projects. I enjoy exploring cutting-edge technologies, solving complex problems, and leading initiatives with measurable impact. My aim is to blend academics, creativity, and technical expertise to drive positive change. I also mentor younger students and actively engage in community service projects.</p>
-  </div>
-</section>
-
-<section id="projects" class="section">
-  <h2>Projects & Contributions</h2>
-  <div class="grid">
-    <div class="project-box" onclick="location.href='robotics.html'">
-      <h3>Robotics & Engineering</h3>
-      <img src="placeholder-robotics.jpg" alt="Robotics Project">
-      <p>Details and images about specific robotics builds, competitions, and contributions to FRC Worlds.</p>
-      <button class="btn">Learn More</button>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">Samuel Adeniyi</a>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme">🌓</button>
+        <button id="menu-toggle" class="btn-icon mobile-only" aria-label="Toggle menu">☰</button>
+      </div>
     </div>
-    <div class="project-box" onclick="location.href='solar.html'">
-      <h3>Solar Energy Project</h3>
-      <img src="placeholder-solar.jpg" alt="Solar Project">
-      <p>Images and description of solar electricity project in Nigeria, impact, and outcomes.</p>
-      <button class="btn">Learn More</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 class="hero-title">Hi — I'm <span class="accent">Samuel</span></h1>
+          <p class="lead">Computer Science student. I build accessible web apps, experiment with ML, and contribute to open source. Designer of small, fast tools for students.</p>
+          <p class="meta">
+            <strong>Major:</strong> Computer Science · <strong>Class:</strong> 2026
+          </p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#projects">View projects</a>
+            <a class="btn btn-outline" href="mailto:you@example.com">Email me</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-hidden="false">
+          <div class="avatar" title="Samuel Adeniyi">SA</div>
+          <ul class="hero-stats">
+            <li><strong>5+</strong><span>Projects</span></li>
+            <li><strong>2</strong><span>Internships</span></li>
+            <li><strong>3.8</strong><span>GPA</span></li>
+          </ul>
+          <p class="small">Available for internships Summer 2026 • Open to collaborations</p>
+          <div class="social">
+            <a href="#" aria-label="GitHub" class="social-link">GitHub</a>
+            <a href="#" aria-label="LinkedIn" class="social-link">LinkedIn</a>
+            <a href="#" aria-label="Twitter" class="social-link">Twitter</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="container about" id="about">
+      <h2>About me</h2>
+      <p>I am a Computer Science student focused on building user-centered web apps and learning machine learning fundamentals. I enjoy working with JavaScript, Python, React, and exploring systems programming and cloud technologies.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Education</h3>
+          <p>[University Name] — BSc Computer Science (2022 — 2026)</p>
+        </article>
+        <article class="card">
+          <h3>Interests</h3>
+          <p>Web development, Machine Learning, Competitive programming, Open Source</p>
+        </article>
+        <article class="card">
+          <h3>Availability</h3>
+          <p>Available for internships & part-time during semester breaks.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container projects" id="projects">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <div class="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="web">Web</button>
+          <button class="filter" data-filter="ml">ML</button>
+          <button class="filter" data-filter="systems">Systems</button>
+        </div>
+      </div>
+
+      <div class="project-grid" id="project-grid">
+        <article class="project-card" data-type="web">
+          <div class="project-meta">
+            <h3>Course Scheduler</h3>
+            <p class="muted">React · Firebase · UX</p>
+          </div>
+          <p>Smart course scheduler that helps students plan semesters and avoid clashes. Built for accessibility and mobile-first usage.</p>
+          <div class="card-actions">
+            <a href="#" class="btn btn-outline">Demo</a>
+            <a href="#" class="btn btn-outline">Source</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-type="ml">
+          <div class="project-meta">
+            <h3>Essay Topic Classifier</h3>
+            <p class="muted">Python · Scikit-learn · Flask</p>
+          </div>
+          <p>A small classifier that suggests essay tags to help organize research. Fine-tuned and deployed as a lightweight API.</p>
+          <div class="card-actions">
+            <a href="#" class="btn btn-outline">Demo</a>
+            <a href="#" class="btn btn-outline">Source</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-type="systems">
+          <div class="project-meta">
+            <h3>Lightweight File Sync</h3>
+            <p class="muted">Rust · CLI</p>
+          </div>
+          <p>CLI tool that syncs project folders with a simple conflict resolution algorithm — great for quick backups and labs.</p>
+          <div class="card-actions">
+            <a href="#" class="btn btn-outline">Source</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="container experience" id="experience">
+      <h2>Experience</h2>
+      <ul class="timeline">
+        <li>
+          <time>Summer 2024</time>
+          <div>
+            <h3>Software Engineering Intern — ExampleCo</h3>
+            <p>Worked on frontend features and accessibility improvements for the team dashboard.</p>
+          </div>
+        </li>
+        <li>
+          <time>Summer 2023</time>
+          <div>
+            <h3>Research Assistant — University Lab</h3>
+            <p>Helped with data preprocessing and experiments for a small NLP research project.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="container skills" id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h4>Languages</h4>
+          <p>JavaScript, Python, Rust, C</p>
+        </div>
+        <div class="skill">
+          <h4>Frameworks / Tools</h4>
+          <p>React, Node, Flask, Docker, Git</p>
+        </div>
+        <div class="skill">
+          <h4>Other</h4>
+          <p>UI/UX, Accessibility, Testing, Cloud (AWS/GCP)</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container achievements" id="achievements">
+      <div class="section-head">
+        <h2>Achievements</h2>
+        <p class="small muted">Selected awards, scholarships, and hackathon wins.</p>
+      </div>
+
+      <div class="achievement-grid">
+        <article class="card achievement-card">
+          <h3>University Merit Scholarship</h3>
+          <p class="muted">2024 · Scholarship</p>
+          <p>Awarded for outstanding academic performance and contribution to student projects.</p>
+          <div class="card-actions">
+            <a class="btn btn-outline" href="achievements/university-merit-scholarship.html">Learn more</a>
+          </div>
+        </article>
+
+        <article class="card achievement-card">
+          <h3>HackTheCampus — 1st Place</h3>
+          <p class="muted">2023 · Hackathon</p>
+          <p>Led a 3-person team to build a campus safety app in 36 hours; won first place and Best UX.</p>
+          <div class="card-actions">
+            <a class="btn btn-outline" href="achievements/hackathon-first-place.html">Learn more</a>
+          </div>
+        </article>
+
+        <article class="card achievement-card">
+          <h3>Research Publication — NLP Preprint</h3>
+          <p class="muted">2023 · Research</p>
+          <p>Co-authored a preprint on topic modeling for student essays used in class projects and research.</p>
+          <div class="card-actions">
+            <a class="btn btn-outline" href="achievements/research-preprint.html">Learn more</a>
+          </div>
+        </article>
+      </div>
+
+      <div style="margin-top:1rem">
+        <a class="btn btn-primary" href="achievements/index.html">See all achievements</a>
+      </div>
+    </section>
+
+    <section class="container contact" id="contact">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <form class="contact-form" action="mailto:you@example.com" method="post" enctype="text/plain">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Send</button>
+            <button class="btn btn-outline" type="button" id="copy-email">Copy email</button>
+          </div>
+        </form>
+
+        <aside class="contact-info">
+          <h3>Let's work together</h3>
+          <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+          <p>Resume: <a href="resume.pdf" target="_blank">Download PDF</a> (add your resume to the repo)</p>
+          <p class="small">Prefer a quick chat? Add your availability in the message and I'll respond.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Samuel Adeniyi — Built with ❤️</p>
+      <nav class="footer-nav">
+        <a href="#privacy">Privacy</a>
+        <a href="#credits">Credits</a>
+      </nav>
     </div>
-    <div class="project-box" onclick="location.href='music.html'">
-      <h3>Music & Performance</h3>
-      <img src="placeholder-music.jpg" alt="Music Performance">
-      <p>Performances, awards, and contributions in piano, choir, and solo music events.</p>
-      <button class="btn">Learn More</button>
-    </div>
-    <div class="project-box" onclick="location.href='leadership.html'">
-      <h3>Leadership & Mentoring</h3>
-      <img src="placeholder-leadership.jpg" alt="Leadership Project">
-      <p>Details on ASB leadership, mentoring, and community engagement projects.</p>
-      <button class="btn">Learn More</button>
-    </div>
-  </div>
-</section>
+  </footer>
 
-<section id="academic" class="section">
-  <h2>Academic History</h2>
-  <div class="diagram">
-    <p>Timeline Diagram of Academic History</p>
-    <img src="placeholder-academic-diagram.png" alt="Academic Timeline Diagram">
-  </div>
-</section>
-
-<section id="resume" class="section">
-  <div class="card">
-    <h2>Resume</h2>
-    <p>
-Samuel Irenitemi Adeniyi<br>
-1708 229th PL SE, Sammamish, 98075<br>
-Email: adeniyisamire@outlook.com | Phone: 425-606-9133<br><br>
-
-<strong>Education</strong><br>
-Skyline High School, Sammamish, WA (Expected Graduation: June 2028) – GPA: 3.957<br>
-Pine Lake Middle School, Sammamish, WA (Graduated: June 2024)<br><br>
-
-<strong>Leadership & Extracurricular Activities</strong><br>
-ASB Director of Communications, Robotics Club, Music, Math Club, Soccer, IYAB<br><br>
-
-<strong>Community Service & Mentoring</strong><br>
-Mentor, Sports Camp, Solar Energy Project<br><br>
-
-<strong>Skills & Strengths</strong><br>
-Leadership, Problem-Solving, Teamwork, Creativity, Mentorship, Time Management, Growth Mindset
-    </p>
-  </div>
-</section>
-
-<section id="contact" class="section">
-  <div class="card">
-    <h2>Contact</h2>
-    <p>Email: adeniyisamire@outlook.com<br>Phone: 425-606-9133<br>Address: 1708 229th PL SE, Sammamish, WA 98075</p>
-  </div>
-</section>
-
-<footer>© 2025 Samuel — Futuristic Dark Tech Website</footer>
+  <script src="assets/script.js" defer></script>
 </body>
-</html>
-
-     
+</html>  
