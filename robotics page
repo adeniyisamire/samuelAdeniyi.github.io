@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Robotics & Engineering - Samuel</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body { margin:0; font-family:'Roboto',sans-serif; background:#0a0a0a; color:#e0e0e0; }
+header { padding:20px; text-align:center; background:#070707; border-bottom:2px solid #00ffff; }
+h1 { font-family:'Montserrat',sans-serif; color:#00aaff; }
+.section { padding:50px 20px; max-width:900px; margin:auto; }
+.card { background:#111; padding:25px; border-radius:12px; box-shadow:0 8px 25px #00ffff20; margin-bottom:30px; }
+.btn { padding:12px 20px; background:#00aaff; color:#fff; border:none; border-radius:8px; cursor:pointer; transition:0.3s; margin-top:10px; }
+.btn:hover { background:#00ffff; color:#0a0a0a; box-shadow:0 0 15px #00ffff; }
+img { max-width:100%; border-radius:10px; margin-bottom:15px; }
+a { color:#00ffff; text-decoration:none; }
+</style>
+</head>
+<body>
+<header>
+<h1>Robotics & Engineering</h1>
+<p><a href="index.html">← Back to Home</a></p>
+</header>
+
+<section class="section">
+<div class="card">
+<h2>FRC Robotics Projects</h2>
+<p>As a member of the Robotics Club (Team 2976), I contributed to:</p>
+<ul>
+<li>Build and electronics team - designing mechanisms and circuits</li>
+<li>Outreach team - community engagement & workshops</li>
+<li>Participation in FRC Worlds competitions</li>
+</ul>
+<img src="placeholder-robotics.jpg" alt="Robotics Project">
+<button class="btn">View More Details</button>
+</div>
+</section>
+</body>
+</html>
